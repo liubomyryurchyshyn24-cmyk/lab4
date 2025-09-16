@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Лабораторна робота 4</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Тестування</h2>
+<form id="testForm">
+
+<h3>Питання 1 (Радіо)</h3>
+<label><input type="radio" name="q1" value="1"> Відповідь 1 (правильна)</label><br>
+<label><input type="radio" name="q1" value="0"> Відповідь 2</label><br>
+<label><input type="radio" name="q1" value="0"> Відповідь 3</label><br>
+<label><input type="radio" name="q1" value="0"> Відповідь 4</label><br>
+
+<h3>Питання 2 (Радіо)</h3>
+<label><input type="radio" name="q2" value="0"> Відповідь 1</label><br>
+<label><input type="radio" name="q2" value="1"> Відповідь 2 (правильна)</label><br>
+<label><input type="radio" name="q2" value="0"> Відповідь 3</label><br>
+<label><input type="radio" name="q2" value="0"> Відповідь 4</label><br>
+
+<h3>Питання 3 (Чекбокси)</h3>
+<label><input type="checkbox" name="q3" value="1"> Варіант 1 (правильний)</label><br>
+<label><input type="checkbox" name="q3" value="1"> Варіант 2 (правильний)</label><br>
+<label><input type="checkbox" name="q3" value="0"> Варіант 3</label><br>
+<label><input type="checkbox" name="q3" value="0"> Варіант 4</label><br>
+
+<h3>Питання 4 (Чекбокси)</h3>
+<label><input type="checkbox" name="q4" value="1"> Варіант 1 (правильний)</label><br>
+<label><input type="checkbox" name="q4" value="1"> Варіант 2 (правильний)</label><br>
+<label><input type="checkbox" name="q4" value="0"> Варіант 3</label><br>
+<label><input type="checkbox" name="q4" value="0"> Варіант 4</label><br>
+
+<h3>Питання 5 (Список однорідного вибору)</h3>
+<select name="q5">
+  <option value="0">Виберіть відповідь</option>
+  <option value="1">Правильна відповідь</option>
+  <option value="0">Неправильна 1</option>
+  <option value="0">Неправильна 2</option>
+  <option value="0">Неправильна 3</option>
+</select>
+
+<h3>Питання 6 (Список множинного вибору з прокрутом)</h3>
+<select name="q6" multiple size="6">
+  <option value="1">Правильна 1</option>
+  <option value="1">Правильна 2</option>
+  <option value="0">Неправильна 1</option>
+  <option value="0">Неправильна 2</option>
+  <option value="0">Неправильна 3</option>
+  <option value="0">Неправильна 4</option>
+  <option value="0">Неправильна 5</option>
+</select>
+
+<h3>Питання 7 (Текстове поле)</h3>
+<input type="text" name="q7" placeholder="Введіть відповідь" value=""><br><br>
+
+<button type="button" id="submitBtn">Завершити тестування</button>
+</form>
+
+<div id="results"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
